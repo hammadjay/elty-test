@@ -1,11 +1,9 @@
+import React, { ButtonHTMLAttributes } from 'react';
 
-
-const PrimaryButton =  ({
+const PrimaryButton: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
   children,
   ...props
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
+}) => {
   return (
     <button
         className="primary-button"

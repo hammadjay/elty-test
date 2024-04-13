@@ -69,7 +69,7 @@ input[type="checkbox"]:checked:active::after {
   justify-content: center;
   align-items: center;  
 }
-input[type="checkbox"]:active {
+input[type="checkbox"]:checked:active {
   background-color: var(--blue-default);
   border: 1px solid var(--blue-default);
   outline: 3px solid rgba(36, 105, 246, 0.1);
@@ -94,6 +94,42 @@ input[type="checkbox"]:active {
 }
 .primary-button:active{
   background-color: var(--yellow-default);
+}
+
+.form{
+  padding: 10px 0px 10px 0px;
+  border-radius: 6px ;
+  border: 1px 0px 0px 0px;
+  box-shadow: 0px 8px 15px 0px #1414141F;
+  box-shadow: 0px 0px 4px 0px #1414141A;
+  border: 1px solid #EEEEEE;
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px 10px 15px;
+    gap: 10px;
+  }
+  .input-container{
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    padding: 8px 15px 8px 22px;
+    justify-content: space-between;
+    align-items: center;
+    
+    label{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.2px;
+    }
+  }
+  .divider-container{
+    padding: 10px 15px 10px 15px;
+    hr{
+      border-top-width: 0.7px;
+      color: var(--gray-border);
+    }      
+  }
 }
 
 @layer utilities {
